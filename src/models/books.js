@@ -6,4 +6,12 @@ const getAllBooks = async () => {
         const books = await collection.find({}).toArray();
         return books;
 };
-export { getAllBooks };
+
+const getBookById = async (bookId) => {
+        const db = getDb();
+        const collection = db.collection('books');
+        const book = await collection.findOne({ _id: bookId });
+        return book;
+};
+
+export { getAllBooks, getBookById };
