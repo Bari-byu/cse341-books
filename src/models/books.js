@@ -10,7 +10,7 @@ const getAllBooks = async () => {
 const getBookById = async (bookId) => {
         const db = getDb();
         const collection = db.collection('books');
-        const book = await collection.findOne({ _id: bookId });
+        const book = await collection.findOne({ id: bookId });
         return book;
 };
 
