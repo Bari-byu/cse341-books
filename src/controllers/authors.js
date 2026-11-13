@@ -1,3 +1,4 @@
+//import
 import {
   getAllAuthors as getAllAuthorsFromDb,
   getAuthorById as getAuthorByIdFromDb,
@@ -7,6 +8,7 @@ import {
   authorHasBooks,
 } from '../models/authors.js';
 
+//request and display books
 const getAllAuthors = async (req, res) => {
   try {
     const authors = await getAllAuthorsFromDb();
