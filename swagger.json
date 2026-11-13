@@ -20,17 +20,7 @@
         ],
         "responses": {
           "200": {
-            "description": "A list of books"
-          },
-          "500": {
-            "description": "Unable to retrieve books"
-          }
-        }
-      }
-    },
-    "/books/{id}": {
-      "get": {
-        "summary": "Get book by ID",
+
         "tags": [
           "books"
         ],
@@ -42,18 +32,12 @@
             "schema": {
               "type": "string"
             },
-            "description": "The book ID."
+
           }
         ],
         "responses": {
           "200": {
-            "description": "A single author"
-          },
-          "404": {
-            "description": "book not found"
-          },
-          "500": {
-            "description": "Unable to retrieve book"
+
           }
         }
       }
@@ -237,10 +221,10 @@
           "500": {
             "description": "Unable to delete author"
           }
+
         }
       }
     }
   },
-  "components": {},
   "tags": []
 }
